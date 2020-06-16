@@ -1,0 +1,11 @@
+.cartHorizontal-img {
+    width: 112px;
+    height: 112px;
+}
+
+@include mobile() {
+    .cartHorizontal-img {
+        width: 96px;
+        height: 96px;
+    }
+}

@@ -1,0 +1,228 @@
+// utilities start
+
+//background
+.bg-cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-banner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+// zindex
+.zindex-up10 {
+    z-index: 10;
+}
+.zindex-down10 {
+    z-index: -10;
+}
+
+// font size
+.fz-14 {
+    font-size: 14px;
+}
+@include md(){
+    .fz-md-24 {
+        font-size: 24px;
+    }
+
+    .fz-md-48 {
+        font-size: 48px;
+    }
+}
+
+// font family
+.fontfamily-secondary {
+    font-family: raleway, sans-serif;
+}
+
+
+//margin 
+// margin top
+.mt-m64{
+    margin-top: -64px;
+}
+.mt-m35 {
+    margin-top: -35px;
+}
+
+//padding
+.py-84 {
+    padding-top: 84px;
+    padding-bottom: 84px;
+}
+
+// top
+.top-16{
+    top: 16px;
+}
+
+// right
+.right-16 {
+    right: 16px;
+}
+
+//overflow
+.overflowX-hidden {
+    overflow-x: hidden;
+}
+
+//translateX
+@include md() {
+    .translateX-md-m85 {
+        transform: translateX(-85px);
+    }
+}
+
+// width
+.w-350 {
+    width: 350px;
+}
+.w-30p {
+    width: 30%;
+}
+
+// height
+.h-350 {
+    height: 350px;
+}
+.h-480 {
+    height: 480px;
+}
+.h-240 {
+    height: 240px;
+}
+
+// img object fit
+.objective-fit {
+    object-fit: cover;
+}
+
+// input setting
+.cursor-pointer {
+    cursor: pointer;
+}
+.input-reset {
+    &:active,
+    &:focus {
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+}
+
+// link setting
+
+// link style 1
+// darkPri
+// hover active primary
+.link-style-1 {
+    color: theme-color("darkPri");
+    font-weight: normal;
+    &:hover {
+        color: theme-color("primary");
+        text-decoration: none;
+    }
+}
+.link-style-1-active {
+    color: theme-color("primary");
+    text-decoration: underline;
+    pointer-events: none;
+    &:hover{
+        color: theme-color("primary");
+    }
+}
+
+// link style 2
+// darkPri
+// hover active primary
+.link-style-2 {
+    color: theme-color("darkSec");
+    font-weight: normal;
+    &:hover {
+        color: theme-color("primary");
+        text-decoration: none;
+    }
+}
+.link-style-2-active {
+    color: theme-color("primary");
+    pointer-events: none;
+    &:hover{
+        color: theme-color("primary");
+    }
+}
+
+
+//product swiper , card style
+.product-cards {
+    &:hover {
+        text-decoration: none;
+    }
+    .product-cards__title,
+    .product-cards__price {
+        color: theme-color("darkPri");
+    }
+    .product-cards__oldprice {
+        color: theme-color("darkThird");
+    }
+}
+
+
+//flex order 
+@include md() {
+    .order-md-1 {
+        order: 1;
+    }
+    .order-md-2 {
+        order: 2;
+    }
+    .order-md-3 {
+        order: 3;
+    }
+}
+
+@include mobile575 {
+    .order-mobile-1 {
+        order: 1;
+    }
+    .order-mobile-2 {
+        order: 2;
+    }
+    .order-mobile-3 {
+        order: 3;
+    }
+    .order-mobile-4 {
+        order: 4;
+    }
+    .order-mobile-5 {
+        order: 5;
+    }
+    .order-mobile-6 {
+        order: 6;
+    }
+    .order-mobile-7{
+        order: 7;
+    }
+    .order-mobile-8 {
+        order: 8;
+    }
+    .order-mobile-9 {
+        order: 9;
+    }
+}
+
+@include mobile {
+    .order-mobile-1 {
+        order: 1;
+    }
+    .order-mobile-2 {
+        order: 2;
+    }
+    .order-mobile-3 {
+        order: 3;
+    }
+}
+// utilities end

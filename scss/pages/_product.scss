@@ -1,0 +1,16 @@
+@include mobile575 {
+    .product-list {
+        .card-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 49%;
+            img {
+                height: 161px;
+                border-radius: 2px;
+            }
+        }
+    }
+}

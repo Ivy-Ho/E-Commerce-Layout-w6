@@ -1,0 +1,109 @@
+// layout start
+
+// header
+.light {
+    .header-logo,
+    .nav-link,
+    .outer-cart-logo,
+    .navbar-toggler {
+        color: #121212;
+    }
+}
+.dark {
+    .header-logo,
+    .inner-cart-logo {
+        color: #121212;
+    }
+    .nav-link,
+    .outer-cart-logo {
+        color: #fff;
+    }
+}
+
+// modal
+.modal.right .modal-dialog {
+    position: fixed;
+    right:0;
+    margin: auto;
+    height: 100%;
+}
+.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+
+@include md(){
+    .modal-header{
+        .fz-md-48 {
+            font-size: 48px;
+        }
+    }
+}
+
+@include mobile() {
+    .dark {
+        .header-logo,
+        .hamburger-icon,
+        .outer-cart-logo {
+            color: #fff;
+        }
+        .back-icon {
+            color: #121212;
+        }
+        .nav-link {
+            color: #121212;
+        }
+    }
+    .light {
+        .outer-cart-logo {
+            color: #121212;
+        }
+    }
+
+    .dark,
+    .light{
+        .menu-list {
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #FFFFFF;
+            height: 100vh;
+            -webkit-transition: width .5s;
+            -o-transition: width .5s;
+            transition: width .5s;
+            padding: 16px 15px;
+            max-width: 100%;
+            width: 100%;
+        }
+        .menu-item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+        }
+        .nav-link {
+            font-size: 24px;
+        }
+
+        .text-rotate {
+            transform: rotate(0deg);
+            transition: transform .5s;
+        }
+        .text-rotate.active {
+            transform: rotate(180deg);
+        }
+
+        .js-productMenu {
+            max-height: 0;
+            transition: max-height 1s;
+            overflow: hidden;
+        }
+        .js-productMenu.active {
+            max-height: 191px;
+        }
+    }
+}
+
+// footer
+.footer-subscribe--bgimg {
+    background-image: url(../images/photo-1580485978320-cc2bc7dcf569.jpg);
+}
+
+// layout end
