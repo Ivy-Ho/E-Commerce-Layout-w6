@@ -1,3 +1,4 @@
+//grid start
 @mixin pad {
     @media (max-width: 992px) {
         @content;
@@ -24,3 +25,5 @@
         @content;
     }
 }
+
+//grid end

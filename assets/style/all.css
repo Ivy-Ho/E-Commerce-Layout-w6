@@ -13153,7 +13153,8 @@ a.text-lightThird:hover, a.text-lightThird:focus {
   .dark .nav-link {
     color: #121212;
   }
-  .light .outer-cart-logo {
+  .light .outer-cart-logo,
+  .light .inner-cart-logo {
     color: #121212;
   }
   .dark .menu-list,
