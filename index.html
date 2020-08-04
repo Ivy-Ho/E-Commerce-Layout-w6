@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="./assets/style/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,100;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">  
+
   </head>
 
   <body class="overflowX-hidden">
+    <!-- header -->
     <header class="dark">
       <!-- nav bar -->
       <div class="container">
@@ -87,17 +88,17 @@
   <!-- banner -->
   <section class="banner mt-m64 container-fluid position-relative mb-7">
     <!-- banner left -->
-    <div class="container ">
+    <div class="container">
       <div class="row">
         <!-- mobile -->
         <div class="col-12 d-md-none">
           <div class="d-flex flex-column justify-content-center vh-100">
             <div class="banner-wrap text-center" data-aos="fade-up">
-              <h1 class="banner-wrap--title text-white text-md-darkPri mb-4">
+              <h1 class="banner-wrap-title text-white text-md-darkPri mb-4">
                 Enjoy Your <br>
                 Minimalist Lifestyle.
               </h1>
-              <p class=" banner-wrap--subtitle text-lightPri mb-7">
+              <p class=" banner-wrap-subtitle text-lightPri mb-7">
                 The best crafts in Taiwan. Get your free <br>
                 shipping on the first order.
               </p>
@@ -113,11 +114,11 @@
         <div class="col-md-6 d-none d-md-block">
           <div class="d-flex flex-column justify-content-center vh-100">
             <div class="banner-wrap" data-aos="fade-right">
-              <h1 class="banner-wrap--title text-darkPri mb-4">
+              <h1 class="banner-wrap-title text-darkPri mb-4">
                 Enjoy Your <br>
                 Minimalist Lifestyle.
               </h1>
-              <p class="h4 banner-wrap--subtitle text-darkSec mb-7">
+              <p class="h4 banner-wrap-subtitle text-darkSec mb-7">
                 The best crafts in Taiwan. Get your free <br>
                 shipping on the first order.
               </p>
@@ -133,16 +134,16 @@
     </div>
     <!-- banner right -->
     <div class="row justify-content-end">
-      <div class="col-md-6 banner--bgimg bg-banner zindex-down10 t-0 b-0 bg-cover">
+      <div class="col-md-6 banner-bgimg bg-banner zindex-down10 t-0 b-0 bg-cover">
       </div>
     </div>
   </section>
 
-  <!-- index-content -->
-  <section class="index-content mb-7 mb-md-8">
-    <div class="container">
+  <!-- content -->
+  <section class="content mb-7 mb-md-8">
+    <ul class="container list-unstyled">
       <!-- 1 -->
-      <div class="row justify-content-md-between mb-4 mb-md-5">
+      <li class="row justify-content-md-between mb-4 mb-md-5">
         <div class="col-12 col-md-6">
           <img src="assets/images/img11.jpg" class="w-100 mb-3 mb-md-0" alt="clays">
         </div>
@@ -163,9 +164,9 @@
             </div>  
           </div>
         </div>
-      </div>
+      </li>
       <!-- 2 -->
-      <div class="row justify-content-md-between flex-md-row-reverse mb-4 mb-md-5">
+      <li class="row justify-content-md-between flex-md-row-reverse mb-4 mb-md-5">
         <div class="col-12 col-md-6">
           <img src="assets/images/photo-1572725394982-fbee32027b77.jpg" class="w-100 mb-3 mb-md-0" alt="clays">
         </div>
@@ -186,9 +187,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </li>
       <!-- 3 -->
-      <div class="row justify-content-md-between">
+      <li class="row justify-content-md-between">
         <div class="col-12 col-md-6">
           <img src="assets/images/photo-1541085478756-418a3402fcb7.jpg" class="w-100 mb-3 mb-md-0" alt="clays">
         </div>
@@ -209,13 +210,13 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 
   <!-- hero -->
   <section class="hero">
-      <div class="hero--bgimg bg-cover py-4">
+      <div class="hero-bgimg bg-cover py-4">
         <div class="container h-100">
           <div class="row flex-column justify-content-between h-100 flex-md-row align-items-md-center">
             <div class="col-md-4" data-aos="fade-right">
@@ -340,7 +341,7 @@
   </section>
   
 </main> 
-
+    <!-- footer -->
     <footer class="footer"> 
       <!-- footer-subscribe -->
       <div class="footer-subscribe--bgimg py-84 bg-cover">
@@ -429,9 +430,11 @@
                   <div class="card-body p-2 p-md-3">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title mb-1 ">Tatami Cup</h5>
-                        <span class="material-icons">
-                          clear
-                        </span>
+                        <a href="#">
+                          <span class="material-icons text-darkPri">
+                            clear
+                          </span>
+                        </a>
                     </div>
                     <span class="text-darkSec mb-3 mr-2">NT$1,080</span>
                     <del class="text-darkThird">NT$1,200</del>
@@ -464,9 +467,11 @@
                   <div class="card-body p-2 p-md-3">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title mb-1 ">Baifan Bowl</h5>
-                        <span class="material-icons">
-                          clear
-                        </span>
+                        <a href="#">
+                          <span class="material-icons text-darkPri">
+                            clear
+                          </span>
+                        </a>
                     </div>
                     <span class="text-darkSec mb-3 mr-2">NT$1,800</span>
                     <div class="row align-items-center">
@@ -560,8 +565,7 @@
     </script>
 
     <!-- swiper -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>

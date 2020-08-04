@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="./assets/style/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,100;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">  
+
   </head>
 
   <body class="overflowX-hidden">
+    <!-- header -->
     <header class="light">
       <!-- nav bar -->
       <div class="container">
@@ -82,7 +83,7 @@
       </div>
     </header>
 
-    
+    <!-- detail-product -->
 <section class="detail-product container mt-md-7 mb-7 mb-md-8">
     <div class="row flex-md-nowrap align-items-md-center overflowX-hidden">
         <!-- detail img  -->
@@ -93,7 +94,7 @@
             </div>
         </div>
         <!-- detail card -->
-        <div class="col-12 col-md-5 mb-4" >
+        <div class="col-12 col-md-5 mb-4">
             <div class="product-cards bg-white p-3 rounded-sm translateX-md-m85 mt-m35 mt-md-0 ">
                 <p class="text-darkSec mb-2">
                     Home / Product / Cup
@@ -151,6 +152,7 @@
     </div>
 </section>
 
+<!-- detail-swiper -->
 <section class="detail-swiper mb-7 mb-md-8">
     <!-- Swiper -->
     <div class="container">
@@ -249,7 +251,7 @@
         </div>
     </div>
 </section>
-
+    <!-- footer -->
     <footer class="footer"> 
       <!-- footer-subscribe -->
       <div class="footer-subscribe--bgimg py-84 bg-cover">
@@ -338,9 +340,11 @@
                   <div class="card-body p-2 p-md-3">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title mb-1 ">Tatami Cup</h5>
-                        <span class="material-icons">
-                          clear
-                        </span>
+                        <a href="#">
+                          <span class="material-icons text-darkPri">
+                            clear
+                          </span>
+                        </a>
                     </div>
                     <span class="text-darkSec mb-3 mr-2">NT$1,080</span>
                     <del class="text-darkThird">NT$1,200</del>
@@ -373,9 +377,11 @@
                   <div class="card-body p-2 p-md-3">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title mb-1 ">Baifan Bowl</h5>
-                        <span class="material-icons">
-                          clear
-                        </span>
+                        <a href="#">
+                          <span class="material-icons text-darkPri">
+                            clear
+                          </span>
+                        </a>
                     </div>
                     <span class="text-darkSec mb-3 mr-2">NT$1,800</span>
                     <div class="row align-items-center">
@@ -469,8 +475,7 @@
     </script>
 
     <!-- swiper -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
